@@ -7,6 +7,32 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "getGasPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSender",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getText",
 				"outputs": [
 					{
@@ -102,11 +128,11 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0x362df3934241a326f0cdb100891d2f7d04d8eb44151c6f1315d4a3b66516e981",
+			"keccak256": "0x9a7e6b1ec8d0f41abf0d1765fab751bae1f1d228fe8f6a796b5e59a629e9fd69",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c6aa12e9df9f85a4b64ef673640f8e6635eec362ab7b315258ca15a487eb5050",
-				"dweb:/ipfs/QmVSr7isAgk93n8TxrG2uVGzJCEyQFjYkGuww6mdEsoFdb"
+				"bzz-raw://727488d42e90bec77304b38aed4987802180038a91835eb01697ac81304af659",
+				"dweb:/ipfs/QmXCgUGe4ZFYAKaVdihiw5ZMQVN1XkC8HMFpzrbTuMJHVd"
 			]
 		}
 	},

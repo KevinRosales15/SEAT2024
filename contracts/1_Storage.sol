@@ -37,4 +37,13 @@ contract Storage {
     {
         text = t;
     }
+
+    function getGasPrice() public view returns (uint){
+        return tx.gasprice;
+    }
+
+    function getSender() public view returns (address){
+        return msg.sender;
+    }
+
 }
