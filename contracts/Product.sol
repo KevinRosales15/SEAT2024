@@ -14,12 +14,13 @@ contract Tienda {
     uint cantidad;
     Estado estado;
     address payable creador;
+    uint preciowei;
     }
 
     function comprar(uint _id) public payable esCliente (_id) productoValido(_id)
     {
         require(
-            msg.value > 0,
+            msg.value >= productos[_id].preciowei,
             "Debe de transferir un valor minimo"
         );
         productos[_id].creador.transfer(msg.value);
@@ -71,9 +72,9 @@ contract Tienda {
         productos[_id].estado = nuevoEstado;
     }
 
-    function crearProducto (uint _id, string memory _nombre, Estado _estado, uint _cantidad) public 
+    function crearProducto (uint _id, string memory _nombre, Estado _estado, uint _cantidad, uint _preciowei) public 
     {
-        productos [_id] = Producto(_nombre, _cantidad, _estado, payable (msg.sender));
+        productos [_id] = Producto(_nombre, _cantidad, _estado, payable (msg.sender), _preciowei);
     }
 
    

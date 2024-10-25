@@ -57,6 +57,11 @@
 						"internalType": "uint256",
 						"name": "_cantidad",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_preciowei",
+						"type": "uint256"
 					}
 				],
 				"name": "crearProducto",
@@ -93,6 +98,11 @@
 						"internalType": "address payable",
 						"name": "creador",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "preciowei",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -127,11 +137,11 @@
 	},
 	"sources": {
 		"contracts/Product.sol": {
-			"keccak256": "0x7a471197bff07cb7bb7bc8555f7824c6d7f473e1e449c23b1c5f689134cdee3f",
+			"keccak256": "0xdf6abd9f23baa22e69f8ec174bf9768fcc2f0aed577c72354fd637beca535716",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://dee3fa613aa2a47d4d2e4f71cf3625d8608accfcd495fb3054c11bc5ee683d73",
-				"dweb:/ipfs/QmcCygovay11NEEeDy1LUSzjxG3qXHnr1FEszjRGsua8tC"
+				"bzz-raw://469dee1992f245be5227a5f6f08ae0109c1696175f4634057df07667891e3a6d",
+				"dweb:/ipfs/QmaABTx2TEMykbs5uTa3cgY67YrZqQzs2rp6bNqGs7RCYM"
 			]
 		}
 	},
